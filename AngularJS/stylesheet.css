@@ -1,0 +1,46 @@
+#displayedWord {
+	background-color : black;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+
+#guessWord {
+	text-align : center;
+}
+
+#lifeLeft {
+	text-align: center;
+	font-size : 25px;
+	color:red;
+}
+
+#correctGuesses{
+	float:left;
+	font-size: 20px;
+	margin:20px;
+	padding:20px;
+	background-color: black;
+	color:white;
+}
+
+#incorrectGuesses{
+	float:right;
+	font-size:20px;
+	margin:20px;
+	padding:20px;
+	background-color: black;
+	color:white;
+}
+#guessword{
+	clear:both;
+}
+
+#footer{
+	clear:both;
+	text-align : center;
+}
+
+#image{
+	text-align : center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+	<!-- Added angular library to the web page -->
+	<link rel = "stylesheet" href = "stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
+	<script src = "app.js"></script>
+</head>
+<body ng-app = "Hangman" ng-controller="gc">
+
+	<div id = "displayedWord">
+		<p> You have to guess the display word <br><br> {{displayWord}}
+		</p>
+	</div>
+
+	<div id = "lifeLeft">
+		<p> 
+			Life : {{lives}}
+		</p>
+	</div>
+
+	<div id = "image">
+		<div id="Image"><img src="hangman/5.png" width="250" height="250" id="images"/></div>
+	</div>
+
+
+	<div id = "correctGuesses">
+		<p> 
+			Contains: : <span ng-repeat = "letter in correctLetters"> {{letter}}
+		</p>
+	</div>
+
+
+	<div id = "incorrectGuesses">
+		<p> 
+			Does not contain: : <span ng-repeat = "letter1 in incorrectLetters"> {{letter1}}
+		</p>
+	</div>
+
+	<div id = "guessWord">
+		<input type = "text" name = "guess" ng-model = "input.letter">
+		<button ng-click = "letterChose()">Guess</button>
+	</div>
+
+	<div id = "footer">
+		Copywrite &copy Kendrick Kwok
+	</div>
+
+</body>
+</html>
