@@ -1,2 +1,2 @@
 # Javascript-Angular
-Javascript-Angular Hangman application
+Website with multiple games
