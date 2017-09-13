@@ -1,3 +1,11 @@
+#Header {
+	text-align: center;
+	padding : 20px;
+	margin : 20px;
+	font-style: Serif;
+	font-size:60px;
+}
+
 #displayedWord {
 	background-color : black;
 	color: white;
@@ -7,6 +15,7 @@
 
 #guessWord {
 	text-align : center;
+	font-style: Serif;
 }
 
 #lifeLeft {
@@ -20,8 +29,6 @@
 	font-size: 20px;
 	margin:20px;
 	padding:20px;
-	background-color: black;
-	color:white;
 }
 
 #incorrectGuesses{
@@ -29,8 +36,6 @@
 	font-size:20px;
 	margin:20px;
 	padding:20px;
-	background-color: black;
-	color:white;
 }
 #guessword{
 	clear:both;

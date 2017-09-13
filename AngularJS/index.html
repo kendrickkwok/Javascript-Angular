@@ -7,16 +7,38 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 
 	<script src = "app.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body ng-app = "Hangman" ng-controller="gc">
 
-	<div id = "displayedWord">
-		<p> You have to guess the display word <br><br> {{displayWord}}
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Kendrick's Developed Games</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Hangman</a></li>
+      <li><a href="#">N/A</a></li>
+      <li><a href="#">N/A</a></li>
+      <li><a href="#">N/A</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+	<div id = "Header">
+		<p class="serif"> Hangman </p>
+	</div>
+	<div id = "displayedWord" class="panel panel-default">
+		<p "panel-heading"> You have to guess the display word <br><br> {{displayWord}}
 		</p>
 	</div>
 
-	<div id = "lifeLeft">
-		<p> 
+	<div id = "lifeLeft" class="panel panel-default">
+		<p class="panel-heading"> 
 			Life : {{lives}}
 		</p>
 	</div>
@@ -26,22 +48,22 @@
 	</div>
 
 
-	<div id = "correctGuesses">
-		<p> 
+	<div id = "correctGuesses" class="panel panel-default">
+		<p > 
 			Contains: : <span ng-repeat = "letter in correctLetters"> {{letter}}
 		</p>
 	</div>
 
 
-	<div id = "incorrectGuesses">
+	<div id = "incorrectGuesses" class="panel panel-default">
 		<p> 
 			Does not contain: : <span ng-repeat = "letter1 in incorrectLetters"> {{letter1}}
 		</p>
 	</div>
 
 	<div id = "guessWord">
-		<input type = "text" name = "guess" ng-model = "input.letter">
-		<button ng-click = "letterChose()">Guess</button>
+		<input type = "text" name = "guess" ng-model = "input.letter" >
+		<button ng-click = "letterChose()" class="btn btn-primary">Guess</button>
 	</div>
 
 	<div id = "footer">
