@@ -1,0 +1,36 @@
+#Header {
+	text-align: center;
+	padding : 20px;
+	margin : 20px;
+	font-style: Serif;
+	font-size:60px;
+}
+
+#hours {
+	text-align:center;
+	padding:10px;
+}
+
+#money {
+	text-align:center;
+	padding:10px;
+}
+
+#convert {
+	text-align:center;
+	padding:10px;
+}
+
+
+#output {
+	text-align:center;
+	padding: 10px;
+}
+
+
+#footer{
+	text-align : center;
+}
+
+
+

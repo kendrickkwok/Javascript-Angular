@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Salary Converter</title>
+	<!-- Added angular library to the web page -->
+	<link rel = "stylesheet" href = "Salary.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
+	<script src = "app2.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body ng-app = "SalaryConverter" ng-controller="sc">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Kendrick's Developed Games</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Hangman</a></li>
+      <li class="active"><a href="salaryconverter.html">Salary Converter</a></li>
+      <li><a href="#">N/A</a></li>
+      <li><a href="#">N/A</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+	<div id = "Header" class = "panel-heading">
+		<p> Salary Converter </p>
+	</div>
+
+	<div id = "hours">
+		<label> Hours per week: </label> <input type = "text" name = "guess" ng-model = "input.hours" >
+	</div>
+
+	<div id = "money">
+		<label> Dollars per Hour: </label> <input type = "text" name = "guess" ng-model = "money.money" >
+	</div>
+
+	<div id = "convert">
+	<button ng-click = "convert()" class="btn btn-primary">Convert</button>
+	</div>
+
+	<div id = "output">
+		<label>Salary: {{output}}</label>
+	</div>
+
+
+
+
+
+	<div id = "footer">
+		Copywrite &copy Kendrick Kwok
+	</div>
+
+</body>
+</html>
