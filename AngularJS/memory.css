@@ -1,0 +1,41 @@
+#Header {
+	text-align: center;
+}
+
+#Header p {
+	font-style: Serif;
+	font-size:60px;
+}
+
+#Header label {
+	padding:30px;
+}
+
+
+
+#footer{
+	text-align : center;
+}
+
+#MemoryBoard {
+	text-align:center;
+	background:gray;
+	border: black 1px dotted;
+	width:800px;
+	height:550px;
+	padding:25px;
+	margin:auto;
+}
+
+#MemoryBoard > div {
+	border: black 1px dotted;
+	background-color: black;
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 10px;
+	padding:20px;
+	font-size:60px;
+	cursor:pointer;
+	text-align:center;
+}
